@@ -1,43 +1,58 @@
 # projeto-etl
 Projeto de ETL (Extract, Transform, Load) utilizando base de dados públicos do Kraggle. Uso da biblioteca pandas para tratamento, e Streamlit para publicação do dashboard.
 
-## Tema
-
-Análise de dados de restaurantes e pedidos utilizando processo ETL com visualização interativa.
-
-Base utilizada:  **Conjunto de dados de preços de carros** do Kaggle.
-
 ## Integrantes
 
-- Integrante 1
-- Integrante 2
-- Integrante 3
-- Integrante 4
-- Integrante 5
+- Denis Neves da Silva
+- Isbelle Julia da Silva Fonseca
+- Karen Beatriz Mereti de Oliveira
+- Mateus Oliveira Macedo
+- Rodrigo dos Santos Matrangolo
+- Wagner Rodrigues de Souza
+
+## Divisão de tarefas
+
+- Mateus: criação/manutenção repositório github
+- Karen/Denis/Mateus: definição das transformações e visualizações
+- Pedro: escrever arquivo extract.py
+- Karen/Rodrigo/Isabelle: escrever arquivo transform.py
+- Mateus: escrever arquivo load.py
+- Denis: escrever arquivo dashboard.py
+
+## Cronograma
+
+Cronograma 1ª etapa:
+Até final de fevereiro/2026:
+- Criação do repositório no github
+- Definição do banco de dados no kaggle 
+Até terceira semana de março/2026:
+- Criar estrutura de pastas no repositório
+- Definir objetivo e transformações
+
+## Tema
+
+Base utilizada:  [**Conjunto de dados de preços de carros**](https://www.kaggle.com/datasets/mos3santos/conjunto-de-dados-de-preos-de-carros) do Kaggle.
+O banco de dados contém informações sobre carros a venda, incluindo:
+- Marca: Kia, Chevrolet, Mercedes, Audi, etc.
+- Modelo: Rio, Malibu, Gla, Q5, etc.
+- Ano de fabricação: 2020, 2012, 2020, 2023
+- Tamanho do motor, em litros (L): 4.2, 2.0, 1.3, 1.0, etc.
+- Tipo de combustível: gaolina, diesel, híbrido, elétrico
+- Transmissão: manual, automática, semi-automática, cvt, etc.
+- Quilometragem rodada
+- Número de portas: 3, 2, 4, 5, etc.
+- Contagem de donos: 5, 3, 2, 1, etc.
+- Preço do carro
 
 ## Objetivo
 
 O objetivo do projeto é desenvolver um **pipeline completo de ETL (Extract, Transform, Load)** utilizando Python e Pandas, armazenando os dados tratados em um banco estruturado e criando uma dashboard interativa com Streamlit para análise dos dados.
 
-O projeto deve conter:
-
-- Extração de dados do Kaggle
-- Tratamento com Pandas
-- Transformação dos dados
-- Armazenamento em banco estruturado
-- Dashboard interativa com Streamlit
-- Versionamento no GitHub
-- Documentação no README
-
 ## Ideia Inicial
 
-Utilizar a base de dados do iFood para responder perguntas como:
+Utilizar a base de dados com preços de carros para responder perguntas como:
 
-- Quais restaurantes têm melhor avaliação?
-- Quais categorias vendem mais?
-- Qual cidade tem mais pedidos?
-- Qual faixa de preço é mais comum?
-- Relação entre avaliação e preço
+- Quais fatores influenciam o preço dos carros?
 
 A dashboard deve permitir:
 
@@ -47,7 +62,7 @@ A dashboard deve permitir:
 - Gráficos interativos
 - Tabelas filtradas
 
-## 🧠 Planejamento do Projeto
+## Planejamento do Projeto
 
 Etapas do projeto:
 
@@ -88,103 +103,3 @@ Etapas do projeto:
 - Testar projeto
 - Publicar no GitHub
 
----
-
-## Divisão de tarefas
-
-### 👤 Pessoa 1 — GitHub + README + Planejamento
-
-Responsável por:
-
-- Criar repositório
-- Criar README.md
-- Organizar pastas
-- Escrever documentação
-
-Estrutura de pastas:
-
-project/
-data/
-etl/
-database/
-dashboard/
-README.md
-
-Também escreve:
-
-- Tema
-- Objetivo
-- Planejamento
-- Ideia inicial
-
----
-
-### 👤 Pessoa 2 — Extract (Extração)
-
-Responsável por:
-
-- Baixar dataset
-- Ler com Pandas
-- Validar dados
-- Salvar dados brutos
-
-Arquivo: etl/extract.py
-
-Exemplo:
-
-```python
-import pandas as pd
-
-df = pd.read_csv("data/raw/ifood.csv")
-
-print(df.head())
-
-```
-
-👤 Pessoa 3 — Transform (Pandas)
-
-Responsável por:
-
-- Limpar dados
-- Tratar valores nulos
-- Criar colunas
-- Converter tipos
-
-Arquivo: etl/transform.py
-
-Exemplo:
-
-```python
-df = df.dropna()
-
-df["price"] = df["price"].astype(float)
-```
-
-👤 Pessoa 4 — Load (Banco de dados)
-
-Responsável por:
-
-- Criar banco SQLite / MySQL / PostgreSQL
-- Criar tabela
-- Inserir dados tratados
-
-Arquivo: etl/load.py
-
-Exemplo:
-
-```python
-import sqlite3
-
-conn = sqlite3.connect("database.db")
-
-df.to_sql("restaurants", conn, if_exists="replace")
-```
-
-👤 Pessoa 5 — Dashboard Streamlit
-
-Responsável por:
-
-- Criar app.py
-- Conectar no banco
-- Criar gráficos
-- Criar filtros
