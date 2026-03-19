@@ -4,7 +4,7 @@ Projeto de ETL (Extract, Transform, Load) utilizando base de dados públicos do 
 ## Integrantes
 
 - Denis Neves da Silva
-- Isbelle Julia da Silva Fonseca
+- Isabelle Julia da Silva Fonseca
 - Karen Beatriz Mereti de Oliveira
 - Mateus Oliveira Macedo
 - Rodrigo dos Santos Matrangolo
