@@ -1,6 +1,10 @@
 # projeto-etl
+
 Projeto de ETL (Extract, Transform, Load) utilizando base de dados públicos do Kaggle
 Uso da biblioteca pandas para tratamento, e Streamlit para publicação do dashboard
+
+O desenvolvimento deste projeto de ETL se justifica pela crescente necessidade de transformar
+grandes volumes de dados brutos em informações úteis para apoio à tomada de decisão
 
 ## Integrantes
 
@@ -46,61 +50,68 @@ O banco de dados contém informações sobre carros à venda, incluindo os campo
 - Contagem de donos: 5, 3, 2, 1, etc.
 - Preço do carro
 
-## Objetivo
+### Objetivo
 
-O objetivo do projeto é desenvolver um **pipeline completo de ETL (Extract, Transform, Load)** utilizando Python e Pandas, armazenando os dados tratados em um banco estruturado e criando uma dashboard interativa com Streamlit para análise dos dados.
+O objetivo do projeto é desenvolver um **pipeline completo de ETL (Extract, Transform, Load)** utilizando Python e Pandas,
+armazenando os dados tratados em um banco estruturado e criando uma dashboard interativa com Streamlit para análise dos dados
 
-## Ideia Inicial
+Esse tipo de base possibilita explorar variáveis relevantes, como marca, ano, tipo de combustível e quilometragem,
+e identificar como elas influenciam diretamente na precificação de veículos
+
+O uso da biblioteca Pandas viabiliza a manipulação eficiente dos dados, enquanto a biblioteca Streamlit permite
+a criação de visualizações interativas acessíveis, facilitando a interpretação dos resultados por diferentes usuários
+
+O projeto também contribui para o desenvolvimento de habilidades técnicas fundamentais, como organização de código,
+versionamento com GitHub, trabalho em equipe e divisão de responsabilidades, simulando um ambiente real
+
+### Ideia Inicial
+
+Possíveis transformações necessárias:
+- Normalização: ajustar os valores numéricos para uma escala comum/padrão
+- Convrsão de variáveis: converter variáveis em formatos que possam ser mais facilmente manipulados
+- Conversão de tipos: transformar tipos `strings`, que representam datas, em tipos numéricos
+- Reestruturação: renomear ou concatenar colunas de dados
+- Agrupamento: organizar dados duplicados ou similares em uma só coluna
 
 Utilizar a base de dados com preços de carros para responder perguntas como:
-
-- Quais fatores influenciam o preço dos carros?
+- Quais fatores que mais influenciam o preço dos carros?
+- Qual a tendência dos preços com o passar dos anos?
+- Quais técnicas são as mais eficientes para manter o preço de um carro, com o passar dos anos?
 
 A dashboard deve permitir:
-
-- Filtros por cidade
-- Filtros por categoria
-- Filtros por preço
-- Gráficos interativos
+- Filtros por: marca, ano de fabricação, tipo de combustível, transmissão, e quilometragem rodada
+- Gráficos interativos: preço x variável
 - Tabelas filtradas
+- Ordenação personalizada: menor para maior, maior para menor, mais populares, etc.
 
 ## Planejamento do Projeto
 
-Etapas do projeto:
-
-### Etapa 1 — Setup
+### Etapa 1: Setup
 
 - Criar repositório no Github
 - Definir dataset
 - Definir tarefas
 - Criar README
 
-### Etapa 2 — Extract
+### Etapa 2: Extract
 
 - Baixar dataset do Kaggle
 - Ler com Pandas
 - Validar colunas
 
-### Etapa 3 — Transform
+### Etapa 3: Transform
 
 - Limpar dados
 - Tratar valores nulos
 - Padronizar colunas
-- Criar novas colunas
 
-### Etapa 4 — Load
+### Etapa 4: Load
 
 - Salvar dados tratados
-- Inserir em banco estruturado (SQLite / PostgreSQL / MySQL)
+- Inserir em banco estruturado
 
-### Etapa 5 — Dashboard
+### Etapa 5: Dashboard
 
 - Criar app com Streamlit
 - Conectar com base tratada
 - Criar gráficos interativos
-
-### Etapa 6 — Finalização
-
-- Ajustar README
-- Testar projeto
-- Publicar no GitHub
