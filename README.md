@@ -1,5 +1,6 @@
 # projeto-etl
-Projeto de ETL (Extract, Transform, Load) utilizando base de dados públicos do Kaggle. Uso da biblioteca pandas para tratamento, e Streamlit para publicação do dashboard.
+Projeto de ETL (Extract, Transform, Load) utilizando base de dados públicos do Kaggle
+Uso da biblioteca pandas para tratamento, e Streamlit para publicação do dashboard
 
 ## Integrantes
 
@@ -12,27 +13,28 @@ Projeto de ETL (Extract, Transform, Load) utilizando base de dados públicos do 
 
 ## Divisão de tarefas
 
+Divisão incial, com possibilidade de alteração se necessário:
 - Mateus: criação/manutenção repositório github
-- Karen/Denis/Mateus: definição das transformações e visualizações
-- Pedro: escrever arquivo extract.py
-- Karen/Rodrigo/Isabelle: escrever arquivo transform.py
-- Mateus: escrever arquivo load.py
-- Denis: escrever arquivo dashboard.py
+- Karen, Denis e Mateus: definição das transformações e visualizações
+- Pedro: escrever arquivo `extract.py`
+- Karen, Rodrigo e Isabelle: escrever arquivo `transform.py`
+- Mateus: escrever arquivo `load.py`
+- Denis: escrever arquivo `dashboard.py`
 
 ## Cronograma
 
 Cronograma 1ª etapa:
-Até final de fevereiro/2026:
-- Criação do repositório no github
-- Definição do banco de dados no kaggle 
-Até terceira semana de março/2026:
-- Criar estrutura de pastas no repositório
-- Definir objetivo e transformações
+- Até final de fevereiro/2026:
+- - Criação do repositório no github
+- - Definição do banco de dados no kaggle 
+- Até terceira semana de março/2026:
+- - Criar estrutura de pastas no repositório
+- - Definir objetivo e transformações
 
 ## Tema
 
 Base utilizada:  [**Conjunto de dados de preços de carros**](https://www.kaggle.com/datasets/mos3santos/conjunto-de-dados-de-preos-de-carros) do Kaggle.
-O banco de dados contém informações sobre carros a venda, incluindo:
+O banco de dados contém informações sobre carros à venda, incluindo os campos:
 - Marca: Kia, Chevrolet, Mercedes, Audi, etc.
 - Modelo: Rio, Malibu, Gla, Q5, etc.
 - Ano de fabricação: 2020, 2012, 2020, 2023
@@ -102,4 +104,3 @@ Etapas do projeto:
 - Ajustar README
 - Testar projeto
 - Publicar no GitHub
-
