@@ -20,10 +20,10 @@ grandes volumes de dados brutos em informações úteis para apoio à tomada de 
 Divisão incial, com possibilidade de alteração se necessário:
 - Mateus: criação/manutenção repositório github
 - Karen, Denis e Mateus: definição das transformações e visualizações
-- Pedro: escrever arquivo `extract.py`
-- Karen, Rodrigo e Isabelle: escrever arquivo `transform.py`
-- Mateus: escrever arquivo `load.py`
-- Denis: escrever arquivo `dashboard.py`
+- Pedro: escrever arquivo [`extract.py`](source/extract.py)
+- Karen, Rodrigo e Isabelle: escrever arquivo [`transform.py`](source/transform.py)
+- Mateus: escrever arquivo [`load.py`](source/load.py)
+- Denis: escrever arquivo [`dashboard.py`](app/dashboard.py)
 
 ## Cronograma
 
@@ -37,7 +37,7 @@ Cronograma 1ª etapa:
 
 ## Tema
 
-Base utilizada:  [**Conjunto de dados de preços de carros**](https://www.kaggle.com/datasets/mos3santos/conjunto-de-dados-de-preos-de-carros) do Kaggle.
+[Base](data-frame/dados.md) utilizada:  [**Conjunto de dados de preços de carros**](https://www.kaggle.com/datasets/mos3santos/conjunto-de-dados-de-preos-de-carros) do Kaggle.
 O banco de dados contém informações sobre carros à venda, incluindo os campos:
 - Marca: Kia, Chevrolet, Mercedes, Audi, etc.
 - Modelo: Rio, Malibu, Gla, Q5, etc.
@@ -93,24 +93,24 @@ A dashboard deve permitir:
 - Definir tarefas
 - Criar README
 
-### Etapa 2: Extract
+### Etapa 2: [Extract](source/extract.py)
 
 - Baixar dataset do Kaggle
 - Ler com Pandas
 - Validar colunas
 
-### Etapa 3: Transform
+### Etapa 3: [Transform](source/transform.py)
 
 - Limpar dados
 - Tratar valores nulos
 - Padronizar colunas
 
-### Etapa 4: Load
+### Etapa 4: [Load](source/load.py)
 
 - Salvar dados tratados
 - Inserir em banco estruturado
 
-### Etapa 5: Dashboard
+### Etapa 5: [Dashboard](app/dashboard.py)
 
 - Criar app com Streamlit
 - Conectar com base tratada
