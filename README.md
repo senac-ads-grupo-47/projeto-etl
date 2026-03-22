@@ -25,11 +25,11 @@ Divisão incial, com possibilidade de alteração se necessário:
 
 Cronograma 1ª etapa:
 - Até final de fevereiro/2026:
-- - Criação do repositório no github
-- - Definição do banco de dados no kaggle 
+ - Criação do repositório no github
+ - Definição do banco de dados no kaggle 
 - Até terceira semana de março/2026:
-- - Criar estrutura de pastas no repositório
-- - Definir objetivo e transformações
+ - Criar estrutura de pastas no repositório
+ - Definir objetivo e transformações
 
 ## Tema
 
