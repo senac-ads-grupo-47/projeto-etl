@@ -34,6 +34,12 @@ Cronograma 1ª etapa:
   - Criar estrutura de pastas no repositório
   - Definir objetivo e transformações
 
+Cronograma 2ª etapa:
+- Até segunda semana de maio/2026:
+  - Criação do `extract.py`, `transform.py`, `load.py` e `dashboard.py`
+- Até terceira semana de maio/2026:
+  - Testes e correções de bugs
+
 ## Tema
 
 [Base](data-frame/dados.md) utilizada:  [**Conjunto de dados de preços de carros**](https://www.kaggle.com/datasets/mos3santos/conjunto-de-dados-de-preos-de-carros) do Kaggle.
