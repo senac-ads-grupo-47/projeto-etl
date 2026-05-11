@@ -13,14 +13,13 @@ grandes volumes de dados brutos em informações úteis para apoio à tomada de 
 - Karen Beatriz Mereti de Oliveira
 - Mateus Oliveira Macedo
 - Rodrigo dos Santos Matrangolo
-- Wagner Rodrigues de Souza
 
 ## Divisão de tarefas
 
 Divisão incial, com possibilidade de alteração se necessário:
 - Mateus: criação/manutenção repositório github
 - Karen, Denis e Mateus: definição das transformações e visualizações
-- Pedro: escrever arquivo [`extract.py`](source/extract.py)
+- Mateus: escrever arquivo [`extract.py`](source/extract.py)
 - Karen, Rodrigo e Isabelle: escrever arquivo [`transform.py`](source/transform.py)
 - Mateus: escrever arquivo [`load.py`](source/load.py)
 - Denis: escrever arquivo [`dashboard.py`](app/dashboard.py)
