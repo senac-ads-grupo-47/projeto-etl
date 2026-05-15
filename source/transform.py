@@ -12,3 +12,12 @@ def transform(df):
         .str.lower()
         .str.replace(" ", "_")
     )
+
+    colunas_numericas = [
+        "year",
+        "price",
+        "mileage",
+        "engine_size",
+        "doors",
+        "owner_count"
+    ]
