@@ -74,4 +74,10 @@ def transform(df):
     df = df.reset_index(drop=True)
 
     print("Transformação concluída com sucesso")
-    return df                
+    return df
+
+if __name__ == "__main__":
+
+    from extract import extract
+    df = extract()
+    df_transformado = transform(df)                    
