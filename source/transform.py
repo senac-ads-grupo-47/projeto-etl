@@ -50,3 +50,9 @@ def transform(df):
                 .str.strip()
                 .str.lower()
             )
+
+    ano_atual = datetime.now().year
+
+    if "year" in df.columns:
+
+        df["car_age"] = ano_atual - df["year"]        
