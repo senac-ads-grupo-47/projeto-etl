@@ -55,4 +55,10 @@ def transform(df):
 
     if "year" in df.columns:
 
-        df["car_age"] = ano_atual - df["year"]        
+        df["car_age"] = ano_atual - df["year"]
+
+    if "price" in df.columns and "mileage" in df.columns:
+
+        df["price_per_km"] = (
+            df["price"] / (df["mileage"] + 1)
+        )            
