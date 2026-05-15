@@ -21,3 +21,21 @@ def transform(df):
         "doors",
         "owner_count"
     ]
+
+    for coluna in colunas_numericas:
+
+        if coluna in df.columns:
+
+            df[coluna] = pd.to_numeric(
+                df[coluna],
+                errors="coerce"
+            )
+
+    df = df.dropna()
+
+    colunas_texto = [
+        "brand",
+        "model",
+        "fuel_type",
+        "transmission"
+    ]
