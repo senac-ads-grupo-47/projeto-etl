@@ -61,4 +61,17 @@ def transform(df):
 
         df["price_per_km"] = (
             df["price"] / (df["mileage"] + 1)
-        )            
+        )
+
+    if "price" in df.columns:
+        
+        df["price_category"] = pd.qcut(
+            df["price"],
+            q=4,
+            labels=["baixo", "medio", "alto", "luxo"]
+        )
+
+    df = df.reset_index(drop=True)
+
+    print("Transformação concluída com sucesso")
+    return df                
