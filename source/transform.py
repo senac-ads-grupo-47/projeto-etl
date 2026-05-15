@@ -39,3 +39,14 @@ def transform(df):
         "fuel_type",
         "transmission"
     ]
+
+    for coluna in colunas_texto:
+
+        if coluna in df.columns:
+
+            df[coluna] = (
+                df[coluna]
+                .astype(str)
+                .str.strip()
+                .str.lower()
+            )
