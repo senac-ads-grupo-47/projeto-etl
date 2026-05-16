@@ -76,8 +76,13 @@ def transform(df):
     print("Transformação concluída com sucesso")
     return df
 
-if __name__ == "__main__":
+def transforming(): #adicionado para compatibilidade com load.py
 
     from extract import extract
     df = extract()
-    df_transformado = transform(df)                    
+    df_transformado = transform(df)   
+    return df_transformado #adicionado para compatibilidade com load.py
+
+if __name__ == "__main__": #modificado
+    df = transforming() #modificado
+    print (df.head()) #modificado para visualizar as tranformações
